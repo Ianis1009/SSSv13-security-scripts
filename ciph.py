@@ -1,4 +1,3 @@
-
 import base64
 from Crypto.Cipher import AES
 from Crypto.Util.Padding import unpad
@@ -19,7 +18,7 @@ for key_hex in keys:
     print("=" * 60)
     print(f"Trying key: {key_hex}")
 
-    cipher = AES.new(key, AES.MODE_ECB)
+    cipher = AES.new(key, AES.MODE_ECB) # AES
     plaintext = cipher.decrypt(ciphertext)
 
     print("Raw bytes :", plaintext)
