@@ -81,5 +81,5 @@ int main(int argc, char **argv)
 }
 
 /***
- * TODO: add rules 
+ * Compile: gcc -Wall -Wextra -Wpedantic -O2 openat_secure.c -o openat_secure
  */
